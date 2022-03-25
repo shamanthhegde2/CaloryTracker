@@ -1,0 +1,9 @@
+<div class="food-item">
+    <img [src]="food.image" alt="food-image">
+    <div class="small">
+        <p>{{food.name}}</p>
+        <p>Calory-{{food.calories}}</p>
+        <input type="number" [(ngModel)]="count" />
+        <button class="add-btn" (click)="addClicked(food)">Add</button>
+    </div>
+</div>

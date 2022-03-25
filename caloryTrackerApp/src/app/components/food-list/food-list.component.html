@@ -1,0 +1,6 @@
+<label for="search">Search </label>
+<input [ngStyle]="{'margin':'20px'}" type="text" name="search" id="search" (input)="searchChange()"
+    [(ngModel)]="search"><br>
+<button (click)="addNewFood()">Add New Food</button>
+<app-food-form *ngIf="showForm" (submitClicked)="newFood($event)"></app-food-form>
+<app-food-item *ngFor="let food of foods" [food]="food"></app-food-item>

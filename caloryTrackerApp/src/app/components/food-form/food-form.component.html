@@ -1,0 +1,15 @@
+<form class="form" (ngSubmit)="formSubmitted()">
+    <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" [(ngModel)]="name" />
+    </div>
+    <div class="form-control">
+        <label for="calories">Calories</label>
+        <input type="text" name="calories" id="calories" [(ngModel)]="calories">
+    </div>
+    <div class="form-control">
+        <label for="image">Image Url</label>
+        <input type="text" name="image" id="image" [(ngModel)]="image">
+    </div>
+    <input type="submit" value="Add Food">
+</form>
