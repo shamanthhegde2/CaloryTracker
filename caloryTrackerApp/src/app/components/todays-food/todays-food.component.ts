@@ -12,6 +12,7 @@ export class TodaysFoodComponent implements OnInit {
   constructor(private uiService: UiServiceService) {
     uiService.onTodayFood().subscribe((f) => {
       this.foods = f;
+      this.totalCalories = 0;
       this.foods.forEach((f) => {
         this.totalCalories += f.calories * f.count;
       });

@@ -18,6 +18,7 @@ export class FoodListComponent implements OnInit {
     if (!this.search) this.foods = foodItems;
   }
   addNewFood() {
+    //false->true
     this.showForm = !this.showForm;
   }
   newFood(food: any) {
